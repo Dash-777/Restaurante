@@ -1,0 +1,145 @@
+
+body {
+    padding-top: 56px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-nosotros {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/restauranteBaner.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: -56px;
+}
+
+.hero-ubicacion {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/restauranteBaner.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: -56px;
+}
+
+.hero-reserva {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/restauranteBaner.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: -56px;
+}
+
+.hero-menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/restauranteBaner.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: -56px;
+}
+
+
+.carousel-item {
+    height: 70vh;
+    min-height: 400px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-caption {
+    bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item {
+    border-left: 4px solid #0d6efd;
+}
+
+.price {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(13, 110, 253, 0.25);
+}
+
+
+#formReserva .form-control, #formReserva .form-select {
+    border-radius: 0;
+    border: 1px solid #ced4da;
+}
+
+#formReserva .form-control:focus, #formReserva .form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+
+.icon-reserva {
+    color: #0d6efd;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+
+@keyframes pulse-shadow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(13, 110, 253, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(13, 110, 253, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(13, 110, 253, 0);
+    }
+}
+
+.btn-reserva {
+    animation: pulse-shadow 2s infinite;
+}
+
+footer {
+    background-color: #212529;
+}
+
+footer h5 {
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+footer h5::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #0d6efd;
+    margin-top: 10px;
+}

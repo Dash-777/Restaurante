@@ -1,0 +1,28 @@
+
+.gallery-img {
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+
+#modalImage {
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.modal-backdrop.show {
+  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.85);
+}

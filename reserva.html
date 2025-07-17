@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Sabores del Mundo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__pulse" href="index.html">Sabores del Mundo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserva.html">Reservas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header class="hero-reserva bg-dark text-white py-5">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 animate__animated animate__fadeInDown">Reserva tu Mesa</h1>
+                    <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Vive una experiencia gastronómica inolvidable</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- reserva fomrulario-->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h2 class="text-center mb-4">Haz tu reservación</h2>
+                            <form id="formReserva">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nombre" class="form-label">Nombre completo*</label>
+                                        <input type="text" placeholder="Ingresa tu nombre" class="form-control" id="nombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="telefono" class="form-label">Teléfono*</label>
+                                        <input type="tel" placeholder="Ingresa tu número de teléfono" class="form-control" id="telefono" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email*</label>
+                                        <input type="email" placeholder="Ingresa tu correo electrónico" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="personas" class="form-label">Número de personas*</label>
+                                        <select class="form-select" id="personas" required>
+                                            <option value="" selected disabled>Seleccione</option>
+                                            <option value="1">1 persona</option>
+                                            <option value="2">2 personas</option>
+                                            <option value="3">3 personas</option>
+                                            <option value="4">4 personas</option>
+                                            <option value="5">5 personas</option>
+                                            <option value="6">6 personas</option>
+                                            <option value="7">7-10 personas</option>
+                                            <option value="8">Más de 10 personas</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="fecha" class="form-label">Fecha*</label>
+                                        <input type="date" class="form-control" id="fecha" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="hora" class="form-label">Hora*</label>
+                                        <select class="form-select" id="hora" required>
+                                            <option value="" selected disabled>Seleccione</option>
+                                            <option value="12:00">12:00 PM</option>
+                                            <option value="12:30">12:30 PM</option>
+                                            <option value="13:00">1:00 PM</option>
+                                            <option value="13:30">1:30 PM</option>
+                                            <option value="14:00">2:00 PM</option>
+                                            <option value="14:30">2:30 PM</option>
+                                            <option value="19:00">7:00 PM</option>
+                                            <option value="19:30">7:30 PM</option>
+                                            <option value="20:00">8:00 PM</option>
+                                            <option value="20:30">8:30 PM</option>
+                                            <option value="21:00">9:00 PM</option>
+                                            <option value="21:30">9:30 PM</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="comentarios" class="form-label">Comentarios adicionales</label>
+                                        <textarea class="form-control" id="comentarios" rows="3" placeholder="Alergias, preferencias, celebraciones especiales, etc."></textarea>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-primary w-100 py-3">Confirmar Reserva</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- informacion -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Políticas de Reservación</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 text-center">
+                        <div class="card-body">
+                            <div class="icon-reserva mb-3">
+                                <i class="fas fa-clock fa-3x text-primary"></i>
+                            </div>
+                            <h5>Horarios</h5>
+                            <p>Las reservas están disponibles en bloques de 2 horas durante nuestro horario de servicio. Para grupos mayores a 8 personas, contactarnos directamente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 text-center">
+                        <div class="card-body">
+                            <div class="icon-reserva mb-3">
+                                <i class="fas fa-utensils fa-3x text-primary"></i>
+                            </div>
+                            <h5>Menús Especiales</h5>
+                            <p>Si requieres menú vegetariano, vegano o tienes restricciones alimenticias, por favor infórmanos con al menos 24 horas de anticipación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 text-center">
+                        <div class="card-body">
+                            <div class="icon-reserva mb-3">
+                                <i class="fas fa-calendar-times fa-3x text-primary"></i>
+                            </div>
+                            <h5>Cancelaciones</h5>
+                            <p>Por favor cancela con al menos 12 horas de anticipación. Para grupos de 6+ personas, se requiere 24 horas de anticipación para evitar cargos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+    <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">¡Reserva Confirmada!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fas fa-check-circle fa-5x text-success mb-4"></i>
+                    <p>Gracias por reservar con nosotros. Hemos enviado los detalles a tu correo electrónico.</p>
+                    <p>Te esperamos en <strong>Sabores del Mundo</strong> para brindarte una experiencia gastronómica inolvidable.</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sabores del Mundo</h5>
+                    <p>Ofreciendo experiencias gastronómicas memorables desde 1955.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horario</h5>
+                    <p>Lunes a Viernes: 12:00 - 23:00<br>
+                    Sábados: 11:00 - 00:00<br>
+                    Domingos: 11:00 - 22:00</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-phone me-2"></i> +51 987654321<br>
+                    <i class="fas fa-envelope me-2"></i> saboresdelmundo@gmail.com<br>
+                    <i class="fas fa-map-marker-alt me-2"></i> Calle Lima, Ciudad Lima</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.Instagram.com/" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.x.com/" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Sabores del Mundo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

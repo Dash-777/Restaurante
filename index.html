@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores del Mundo - Restaurante Gourmet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+     <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__pulse" href="index.html">Sabores del Mundo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserva.html">Reservas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/Platos.jpg" class="d-block w-100" alt="Plato gourmet 1">
+                <div class="carousel-caption d-none d-md-block animate__animated animate__fadeInUp">
+                    <h5>Experiencia Gastronómica Única</h5>
+                    <p>Descubre sabores que te transportarán alrededor del mundo</p>
+                    <a href="galeria.html" class="btn btn-dark">Ver</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/Ingredientes.jpg" class="d-block w-100" alt="Plato gourmet 2">
+                <div class="carousel-caption d-none d-md-block animate__animated animate__fadeInUp">
+                    <h5>Ingredientes Frescos y Locales</h5>
+                    <p>Trabajamos con productores de la región para ofrecerte lo mejor</p>
+                    <a href="galeria.html" class="btn btn-dark">Ver</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/restaurante.jpg" class="d-block w-100" alt="Plato gourmet 3">
+                <div class="carousel-caption d-none d-md-block animate__animated animate__fadeInUp">
+                    <h5>Ambiente Elegante y Acogedor</h5>
+                    <p>Diseñado para que disfrutes de momentos inolvidables</p>
+                    <a href="galeria.html" class="btn btn-dark">Ver</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Bienvenida -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="animate__animated animate__fadeIn">Bienvenidos a Sabores del Mundo</h2>
+                    <p class="lead">Donde cada plato cuenta una historia</p>
+                    <p>Nuestro restaurante ofrece una experiencia culinaria única, fusionando técnicas tradicionales con innovación moderna. Cada ingrediente es cuidadosamente seleccionado para garantizar la máxima calidad y frescura.</p>
+                    <a href="reserva.html" class="btn btn-primary btn-reserva animate__animated animate__pulse animate__infinite">Reserva Ahora</a>
+                </div>
+<div class="col-lg-6">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ki9AGLZYpmU?si=38JlItnT27EvekD6&autoplay=1&mute=1" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especialidades -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestras Especialidades</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/risotoPlato.jpg" class="card-img-top" alt="Especialidad 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Risotto de Hongos Silvestres</h5>
+                            <p class="card-text">Preparado con arroz arbóreo, hongos de temporada y un toque de trufa.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPlato1">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/solomilloPlato.jpg" class="card-img-top" alt="Especialidad 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Solomillo Wellington</h5>
+                            <p class="card-text">Ternera premium envuelta en hojaldre con paté y duxelles de champiñones.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPlato2">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="img/souflePlato.jpg" class="card-img-top" alt="Especialidad 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Soufflé de Chocolate</h5>
+                            <p class="card-text">Clásico francés servido con helado de vainilla y salsa de frutos rojos.</p>
+                            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPlato3">Ver detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acordeon -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
+            <div class="accordion" id="accordionFAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            ¿Tienen opciones vegetarianas/veganas?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Sí, contamos con una selección de platos vegetarianos y veganos cuidadosamente elaborados. Nuestro chef puede adaptar muchos de nuestros platos para satisfacer necesidades dietéticas específicas.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            ¿Aceptan reservas para grupos grandes?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Sí, aceptamos reservas para grupos de hasta 20 personas. Para grupos más grandes, recomendamos contactarnos con al menos 48 horas de anticipación para que podamos preparar una experiencia adecuada.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            ¿Tienen estacionamiento propio?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body">
+                            Contamos con un estacionamiento limitado frente al restaurante. También hay estacionamiento público disponible a una cuadra de nuestro local. Los clientes con reserva tienen prioridad para nuestro estacionamiento.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modales -->
+    <div class="modal fade" id="modalPlato1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Risotto de Hongos Silvestres</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/risotoPlato.jpg" class="img-fluid mb-3" alt="Risotto">
+                    <p>Nuestro risotto es preparado al momento con arroz arbóreo de la más alta calidad, cocinado lentamente en caldo de vegetales casero. Los hongos silvestres son recolectados localmente y añadidos en el punto perfecto de cocción. Terminado con un toque de trufa negra y queso parmesano reggiano.</p>
+                    <p><strong>Ingredientes principales:</strong> Arroz arbóreo, mezcla de hongos silvestres, caldo de vegetales, vino blanco, trufa negra, queso parmesano, mantequilla, hierbas frescas.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPlato2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Solomillo Wellington</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/solomilloPlato.jpg" class="img-fluid mb-3" alt="Solomillo">
+                    <p>Una reinterpretación del clásico Beef Wellington, nuestro solomillo proviene de ganado alimentado con pasto, sellado a la perfección y envuelto en una capa de duxelles de champiñones, jamón serrano y hojaldre casero. Servido con reducción de vino tinto y puré de patatas trufado.</p>
+                    <p><strong>Ingredientes principales:</strong> Solomillo de ternera, champiñones, jamón serrano, hojaldre, huevo, patatas, trufa, vino tinto, hierbas provenzales.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPlato3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Soufflé de Chocolate</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/souflePlato.jpg" class="img-fluid mb-3" alt="Soufflé">
+                    <p>Nuestro emblemático postre, preparado al momento con chocolate belga de alta calidad. La textura aireada y el centro fundido crean una experiencia única. Acompañado de helado artesanal de vainilla de Madagascar y salsa de frutos rojos.</p>
+                    <p><strong>Ingredientes principales:</strong> Chocolate belga 70% cacao, huevos frescos, azúcar, mantequilla, harina, vainilla, frutos rojos, crema para helado.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sabores del Mundo</h5>
+                    <p>Ofreciendo experiencias gastronómicas memorables desde 1955.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horario</h5>
+                    <p>Lunes a Viernes: 12:00 - 23:00<br>
+                    Sábados: 11:00 - 00:00<br>
+                    Domingos: 11:00 - 22:00</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-phone me-2"></i> +51 987654321<br>
+                    <i class="fas fa-envelope me-2"></i> saboresdelmundo@gmail.com<br>
+                    <i class="fas fa-map-marker-alt me-2"></i> Calle Lima, Ciudad Lima</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.Instagram.com/" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.x.com/" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Sabores del Mundo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
